@@ -1,10 +1,14 @@
 import React from "react";
+import headerImage from "../assets/header_image.jpg";
 
 const Header = () => {
   return (
     <>
       <header className="h-[850px] relative">
-        <div className="bg-[url('/images/header_image.jpg')] w-full h-full  bg-cover absolute -z-10 -mt-56"></div>
+        <div
+          className="w-full h-full bg-cover absolute -z-10 -mt-56"
+          style={{ backgroundImage: `url(${headerImage})` }}
+        ></div>
         <nav className="flex justify-between w-[1100px] h-auto mx-auto mt-10">
           <div className="text-white font-bold text-5xl font-Noto">
             <a href="#">
